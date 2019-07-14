@@ -1,7 +1,9 @@
 # PVRNet
 PVRNet: Point-View Relation Neural Network for 3D Shape Recognition (AAAI 2019)
+
 Created by Haoxuan You, Yifan Feng, Xibin Zhao, Changqing Zou, Rongrong Ji, Yue Gao from Tsinghua University.
 
+![](https://github.com/iMoonLab/PVRNet/blob/master/docs/pipeline.png)
 ### Introduction
 This work will appear in AAAI 2019. We propose a point-view relation neural network called PVRNet for 3D shape recognition and retrieval. You can chekc our [paper](https://arxiv.org/abs/1812.00333) for more details.
 
