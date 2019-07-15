@@ -7,7 +7,7 @@ Created by Haoxuan You, Yifan Feng, Xibin Zhao, Changqing Zou, Rongrong Ji, Yue 
 ### Introduction
 This work will appear in AAAI 2019. We propose a point-view relation neural network called PVRNet for 3D shape recognition and retrieval. You can chekc our [paper](https://arxiv.org/abs/1812.00333) for more details.
 
-In this repository, our code and data is released for training our PVRNet on ModelNet40 dataset.
+In this repository, our code and data are released for training our PVRNet on ModelNet40 dataset.
 
 ### Citation
 If you find our work useful in your research, please cite our paper:
@@ -31,9 +31,19 @@ Pretrained Model: [multi-view part(MVCNN)](https://drive.google.com/file/d/1dZG7
 
     ```mkdir -p data result/ckpt```
     
-+ Train PVRNet. This would use pretrained MVCNN model and DGCNN model that saved in ./result/ckpt:
++ Train PVRNet. This would use pretrained MVCNN model and DGCNN model saved in ./result/ckpt:
 
     ``` python train_pvrnet.py```
+
++ If validate the performance of PVRNet with our pretrained model:
+
+    `python val_pvrnet.py`
+
+    If validate the performance of pretrained MVCNN and DGCNN models:
+    ```
+    python val_mvcnn.py
+    python val_pc.py
+    ```
 
 + If you want to train new model for MVCNN and DGCNN:
 
@@ -42,9 +52,7 @@ Pretrained Model: [multi-view part(MVCNN)](https://drive.google.com/file/d/1dZG7
     python train_mvcnn.py
     python train_pc.py
     ```
-+ If validate the performance of PVRNet with our pretrained model:
-    
-    `python val_pvrnet.py`
+
 
 ### License
 Our code is released under MIT License (see LICENSE file for details).
